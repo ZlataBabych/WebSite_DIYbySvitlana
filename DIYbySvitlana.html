@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DIY by Svitlana">
+  <!-- Мета-опис сторінки -->
+  <meta property="og:title" content="DIY by Svitlana" />
+  <!-- Заголовок для Open Graph -->
+  <meta property="og:url" content="https://www.diybysvitlana.pp.ua/" />
+  <meta property="og:description" content="Toys Souvenirs. Goods. Beadwork. Needlework. Knitting and crocheting.">
+  <!-- Опис для Open Graph -->
+  <meta property="og:image" content="DIY_img.jpg">
+  <!-- Зображення-мініатюра для Open Graph -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="icon" href="bee_icon.ico" type="image/x-icon">
+  <!-- Посилання на Favicon -->
+  <title>DIY by Svitlana</title>
+  <!-- Заголовок сторінки -->
+  <style>
+    /* CSS */
+    
+    body {
+      font-family: cursive, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #20b2aa;
+    }
+    
+    header {
+      color: #00ffff;
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    nav {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+    }
+    
+    nav li {
+      margin: 0 10px;
+    }
+    
+    section {
+      padding: 20px;
+    }
+    
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="cookie-notice" style="width: 100%; position: fixed; z-index: 1000; bottom: 0; left: 0; background-color: lightgray;">
+    <p>This website uses cookies so that we can provide you with the best website experience. By clicking “I Accept” you acknowledge the use of cookies and to our <a href="#"><u>Privacy Policy</u></a>.</p>
+    <a id="i-accept">I Accept</a>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    (function($) {
+      $('#i-accept').on('click', function() {
+        if (localStorage.hidecookiebar !== '1') {
+          $('#cookie-notice').hide();
+          localStorage.hidecookiebar = '1';
+        }
+      });
+      if (localStorage.hidecookiebar == '1') {
+        $('#cookie-notice').hide();
+      };
+    })(jQuery);
+  </script>
+  <header>
+    <h1>Do it Yourself<br>
+		by Svitlana</h1>
+    <p>If you want to create MIRACLES with your own hands - then come to US!</p>
+    <nav>
+      <ul>
+        <li><a href="#">Main</a></li>
+        <li><a href="#about">About the product</a></li>
+        <li><a href="#about-us">About us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Форма авторизації -->
+  <form action="/login" method="post">
+    <h2>Login</h2>
+    <label for="loginUsername">Username:</label>
+    <input type="text" id="loginUsername" name="loginUsername" required>
+
+    <label for="loginPassword">Password:</label>
+    <input type="password" id="loginPassword" name="loginPassword" required>
+
+    <label for="rememberMe">Remember Me:</label>
+    <input type="checkbox" id="rememberMe" name="rememberMe">
+
+    <input type="submit" value="Login">
+    <input type="reset" value="Clear">
+  </form>
+
+  <!-- Форма реєстрації -->
+  <form action="/register" method="post">
+    <h2>Registration</h2>
+    <label for="registerUsername">Username:</label>
+    <input type="text" id="registerUsername" name="registerUsername" required>
+
+    <label for="registerPassword">Password:</label>
+    <input type="password" id="registerPassword" name="registerPassword" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="subscribe">Subscribe:</label>
+    <input type="checkbox" id="subscribe" name="subscribe" checked>
+
+    <p>Gender:</p>
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="gender" value="female">
+
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option value="Ukraine"> Ukraine </option>
+      <option value="Poland"> Poland </option>
+      <option value="Germany"> Germany </option>
+    </select>
+
+    <label for="birthdate">Birthdate:</label>
+    <input type="date" id="birthdate" name="birthdate" required>
+
+    <input type="submit" value="Register">
+    <input type="reset" value="Clear">
+  </form>
+  <main>
+    <hr>
+    <section>
+      <h2>Presentation 1</h2>
+      <p>1000 UAH</p>
+      <img src="toy1.jpg" alt="Зображення секції 1" width="70%" height="70%">
+    </section>
+    <section>
+      <h2>Presentation 2</h2>
+      <p>500 UAH</p>
+      <img src="toy2.jpg" alt="Зображення секції 2" width="70%" height="70%">
+    </section>
+    <section>
+      <h2>Presentation 3</h2>
+      <p>1000 UAH</p>
+      <img src="toy3.jpg" alt="Зображення секції 3" width="70%" height="70%">
+    </section>
+    <section>
+      <h2>Presentation 4</h2>
+      <p>5000 UAH</p>
+      <img src="toy4.jpg" alt="Зображення секції 4" width="70%" height="70%">
+    </section>
+
+    <hr>
+    <section id="about">
+      <h2>About the Product</h2>
+      <p>Each product is created by hand!</p>
+      <p>Materials:</p>
+      <ul>
+        <li>
+          Beads </li>
+        <li>
+          Fabric ("Freken Bock" and others) </li>
+        <li>
+          Threads for crocheting </li>
+        <li>
+          Threads for knitting </li>
+      </ul>
+    </section>
+    <hr>
+    <section id="about-us">
+      <h2>About Us</h2>
+      <img src="mama.jpg" alt="Зображення мами" width="25%" height="25%">
+      <p>I am a teacher of the children's group "Modeling toys and souvenirs". I have been a teacher of this group for more than 12 years. Hundreds of children enthusiastically do needlework with me! I have a lot of experience! If you want to become part of our great team, please write to us!</p>
+      <p><a href="#contact">Contact us</a> to join our team or for any inquiries.</p>
+    </section>
+    <hr>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or need order, please don't hesitate to reach out to us. We're here to help!</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:zlatoslavababich@gmail.com">zlatoslavababich@gmail.com</a></li>
+        <li><strong>Telegram:</strong> <a href="https://t.me/ZlatoslavaBabych">https://t.me/ZlatoslavaBabych</a></li>
+        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/zlatoslava_babich/">@zlatoslava_babich</a></li>
+      </ul>
+      <p>We're available during our business hours and will respond to your inquiries as soon as possible. You can also visit our physical store at the following address:</p>
+      <address>
+        Mykhailo Lushpa 12<br>
+        Sumy<br>
+        Ukraine
+    </address>
+    </section>
+    <hr>
+
+  </main>
+  <footer>
+    &copy; 2023 Do it Yourself. All rights reserved.
+  </footer>
+
+</body>
+
+</html>
